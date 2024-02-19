@@ -1,17 +1,24 @@
 <html>
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css</title>
     <style type="text/css">
-        *{
+        * {
             box-sizing: border-box;
-            height:100vh;
+
+            
+        }
+
+        body {
+            height: 100vh;
             background-color: lightblue;
         }
-            .page {
+
+        .page {
             /* background-color: lightblue; */
-            height: 90%;
-            width: 90%;
+            height: 100%;
+            width: 100%;
         }
 
         .header {
@@ -31,19 +38,21 @@
             /* margin-right: 10%;
             margin-left: 10%; */
         }
-        .footer{
+
+        .footer {
             height: 10%;
             background-color: blue;
             width: 100%;
         }
 
-        .row{
-            width: 40%;
+        .row {
+            width: 65%;
             height: 40%;
             background-color: orange;
             float: left;
         }
-        .sidebar{
+
+        .sidebar {
             width: 30%;
             height: 30%;
             color: white;
@@ -75,6 +84,18 @@
             color: white;
             /* margin-left: 10%; */
         }
+
+        @media (max-width: 720px) {
+            .row {
+                width: 100%;
+                /* background-color: green; */
+            }
+
+            .sidebar {
+                width: 100%;
+                /* background-color: grey; */
+            }
+        }
     </style>
 </head>
 
@@ -85,7 +106,7 @@
         </div>
         <div class="content">
             <div class="row">
-               
+
                 <div class="entry1">entry
 
                 </div>
@@ -107,3 +128,4 @@
 </body>
 
 </html>
+
